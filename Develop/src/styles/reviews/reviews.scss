@@ -1,0 +1,25 @@
+.section__reviews {
+  display: grid;
+  grid-template-rows: 152px min-content;
+  grid-template-areas: 'title download'
+                       'list list';
+  row-gap: 52px;
+  align-items: flex-end;
+}
+
+.section__reviews .section__title {
+  grid-area: title;
+  line-height: 75%;
+}
+
+.about__link {
+  grid-area: download;
+  justify-self: end;
+}
+
+.section__reviews_list {
+  grid-area: list;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}

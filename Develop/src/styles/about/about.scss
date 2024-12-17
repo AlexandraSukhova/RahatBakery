@@ -1,0 +1,45 @@
+.section__about {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: 152px 1fr;
+  gap: 52px 70px;
+  grid-template-areas: 'title logo'
+                       'description logo';
+}
+
+.section__about .section__title {
+  grid-area: title;
+  align-self: center;
+}
+
+.section__about::after {
+  grid-area: logo;
+  content: '';
+  background: url('../../images/logo/rahat-bakery-logo.svg') no-repeat center;
+  background-size: cover;
+  display: block;
+  width: 326px;
+  aspect-ratio: 1/1;
+}
+
+.about__description_container {
+  grid-area: description;
+  display: grid;
+  row-gap: 24px;
+}
+
+.about__description {
+  display: block;
+  font-size: var(--paragraph-size);
+  font-weight: var(--regular-text);
+  line-height: 125%;
+}
+
+.about__description:nth-child(odd) {
+  max-width: 628px;
+}
+
+.about__description:nth-child(even) {
+  max-width: 342px;
+  justify-self: flex-end;
+}

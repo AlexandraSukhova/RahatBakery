@@ -1,0 +1,41 @@
+.contacts__subtitle::before {
+  content: '';
+  background-size: cover;
+  background-position: center;
+  width: 24px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.address::before {
+  background-image: url('../../images/icons/map-point.svg');
+}
+
+.phone::before {
+  background-image: url('../../images/icons/phone.svg');
+}
+
+.email::before {
+  background-image: url('../../images/icons/email.svg');
+}
+
+.instagram::before {
+  background-image: url('../../images/icons/instagram.svg');
+}
+
+.facebook::before {
+  background-image: url('../../images/icons/facebook.svg');
+}
+
+.telegram::before {
+  background-image: url('../../images/icons/telegram.svg');
+}
+
+.tiktok::before {
+  background-image: url('../../images/icons/TikTok.svg');
+}
+
+

@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+address {
+  font-family: inherit;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-wrapper {
+  padding: var(--page-padding);
+}

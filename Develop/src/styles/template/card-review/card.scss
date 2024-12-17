@@ -1,0 +1,47 @@
+.review__card-item {
+  flex: 1 0 400px;
+}
+
+.review__card {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 'image name'
+                       'stars stars'
+                       'description description';
+  grid-template-columns: 56px 1fr;
+  align-items: center;
+}
+
+.review__card-image {
+  grid-area: image;
+  border-radius: 50%;
+  width: 56px;
+}
+
+.review__card-name {
+  grid-area: name;
+  font-size: var(--paragraph-size);
+  font-weight: var(--medium-text);
+  text-transform: uppercase;
+}
+
+.review__card_star-list {
+  grid-area: stars;
+  display: flex;
+  column-gap: 4px;
+}
+
+.review__card_star_item {
+  display: block;
+  width: 40px;
+  aspect-ratio: 1/1;
+  background: url('../../../images/icons/star.svg') no-repeat center;
+  background-size: cover;
+}
+
+.review__card-description {
+  grid-area: description;
+  font-size: var(--support-text-size);
+  font-weight: var(--regular-text);
+  line-height: 125%;
+}

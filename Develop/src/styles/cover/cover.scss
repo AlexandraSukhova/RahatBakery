@@ -1,0 +1,56 @@
+.section__cover {
+  display: grid;
+  grid-template-areas: 'text image';
+  grid-template-columns: 1fr 0.85fr;
+  gap: 0 60px;
+  margin-right: -80px;
+}
+
+.cover__text_block {
+  grid-area: text;
+}
+
+.cover__title {
+  font-size: var(--main-title-size);
+  font-weight: var(--extraBold-text);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.cover__description {
+  max-width: 540px;
+  font-size: var(--paragraph-size);
+  font-weight: var(--regular-text);
+}
+
+.cover__button-container {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.cover__image_container {
+  max-height: 650px;
+  position: relative;
+  grid-area: image;
+  z-index: 1;
+}
+
+.cover__image {
+  object-position: bottom;
+}
+
+.cover__image_container::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
+  content: '';
+  display: block;
+  width: 326px;
+  aspect-ratio: 1/1;
+  background-image: url('../../images/logo/rahat-bakery-logo.svg');
+  background-size: cover;
+  background-position: center;
+}

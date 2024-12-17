@@ -1,0 +1,62 @@
+.menu__position-item {
+  display: grid;
+  grid-template-areas: 'heading price'
+                       'description description'
+                       'filling .';
+  justify-content: space-between;
+  row-gap: 12px;
+}
+
+.menu__position-header {
+  grid-area: heading;
+  text-transform: uppercase;
+  font-size: var(--paragraph-size);
+  font-weight: var(--medium-text);
+}
+
+.menu__position-price {
+  grid-area: price;
+  justify-self: end;
+  font-size: var(--paragraph-size);
+  font-weight: var(--medium-text);
+}
+
+.menu__position-description {
+  max-width: 296px;
+  grid-area: description;
+  font-size: var(--support-text-size);
+  font-weight: var(--regular-text);
+  color: var(--service-color);
+}
+
+.menu__position-header,
+.menu__position-price {
+  white-space: nowrap;
+}
+
+.menu__position-filling-title {
+  margin-bottom: 5px;
+  font-size: var(--support-text-size);
+  font-weight: var(--regular-text);
+  color: var(--service-color);
+}
+
+.filling-container {
+  grid-area: filling;
+}
+
+.menu__position-filling-list {
+  padding-left: 25px;
+  list-style: '—  ';
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  line-height: 125%;
+  font-size: var(--support-text-size);
+  font-weight: var(--regular-text);
+  color: var(--service-color);
+}
+
+.menu__position-filling-list li {
+  padding-right: 4px;
+}

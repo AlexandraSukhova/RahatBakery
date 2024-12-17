@@ -1,0 +1,71 @@
+.section__menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+
+.section__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+
+.section__menu-item {
+  padding-top: 93px;
+  display: grid;
+  gap: 32px 132px;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: min-content 1fr;
+  justify-content: space-between;
+}
+
+.section__menu-item .section__subtitle {
+  grid-area: title;
+}
+
+.menu__position-list {
+  min-width: 411px;
+  grid-area: itemList;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.menu__images-list {
+  min-width: 737px;
+  grid-area: images;
+  display: grid;
+  grid-template-columns: 1fr 0.73fr;
+  gap: 24px;
+}
+
+.menu__bread,
+.menu__desserts {
+  grid-template-areas: 'title images'
+                       'itemList images';
+}
+
+.menu__main-dishes {
+  grid-template-areas: 'images title'
+                       'images itemList';
+}
+
+.menu__images-list-bread {
+  grid-template-rows: 411px;
+}
+
+.menu__images-list-dishes {
+  grid-template-rows: 413px 296px;
+}
+
+.menu__images-list-desserts {
+  grid-template-rows: 332px 397px;
+}
+
+.menu__images-list-desserts li:last-child {
+  grid-column: 1 / span 2;
+}
+
+.menu__images-list-dishes li:first-child {
+  grid-row: 1 / span 2;
+}

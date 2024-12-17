@@ -1,0 +1,13 @@
+a:hover {
+  color: var(--accent-color)
+}
+
+a:focus {
+  border: none;
+}
+
+a:focus-visible {
+  outline: 2px solid #ffa11e;
+  outline-offset: 5px;
+  border-radius: 4px;
+}

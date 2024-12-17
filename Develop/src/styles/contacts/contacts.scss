@@ -1,0 +1,80 @@
+@import url('./icons.scss');
+
+.section__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+  padding-bottom: 40px;
+}
+
+.contacts__description {
+  display: block;
+  max-width: 799px;
+  font-size: var(--paragraph-size);
+  font-weight: var(--regular-text);
+}
+
+.contacts-container {
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 0.5fr);
+  grid-template-rows: min-content 1fr;
+  grid-template-areas: 'address contacts social'
+                      'map contacts social';
+  gap: 40px 60px;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  max-width: 392px;
+}
+
+.contacts__subtitle {
+  text-transform: uppercase;
+  font-size: var(--paragraph-size);
+  font-weight: var(--medium-text);
+  position: relative;
+  cursor: default;
+}
+
+.contacts__address_description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  font-size: var(--support-text-size);
+  line-height: 125%;
+  font-weight: var(--regular-text);
+}
+
+.contacts__address_time {
+  display: block;
+  line-height: 125%;
+  cursor: default;
+}
+
+.contacts__link-list {
+  grid-area: contacts;
+  justify-self: end;
+}
+
+.contacts__social_link-list {
+  grid-area: social;
+  justify-self: center;
+}
+
+.contacts__link-list,
+.contacts__social_link-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  line-height: 125%;
+}
+
+.contacts__link {
+  margin-top: 8px;
+  display: block;
+  font-size: var(--support-text-size);
+  font-weight: var(--regular-text);
+}
