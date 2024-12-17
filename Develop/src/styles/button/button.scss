@@ -4,7 +4,6 @@
   font-size: var(--paragraph-size);
   text-transform: uppercase;
   font-weight: var(--semiBold-text);
-  line-height: 120%;
   white-space: nowrap;
 }
 
@@ -30,6 +29,7 @@
 
 .button-main:hover {
   background-color: #ffa11e;
+  color: var(--background-color);
 }
 
 .button-main:active {

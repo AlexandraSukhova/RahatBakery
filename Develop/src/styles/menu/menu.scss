@@ -1,19 +1,18 @@
 .section__menu {
   display: flex;
   flex-direction: column;
-  row-gap: 0;
+  row-gap: 52px;
 }
 
 .section__menu-list {
   display: flex;
   flex-direction: column;
-  row-gap: 0;
+  row-gap: var(--inner-section-gap);
 }
 
 .section__menu-item {
-  padding-top: 93px;
   display: grid;
-  gap: 32px 132px;
+  gap: 32px;
   grid-template-columns: repeat(2, min-content);
   grid-template-rows: min-content 1fr;
   justify-content: space-between;

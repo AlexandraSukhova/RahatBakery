@@ -9,16 +9,3 @@
   font-weight: 400 800;
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'Montserrat';
-  src:
-      local('Montserrat'),
-      url('./fonts/Montserrat-Italic-VF.woff2') format('woff2 supports variations'),
-      url('../fonts/Montserrat-Italic-VF.woff2') format('woff2-variations'),
-      url('./fonts/Montserrat-Italic-VF.ttf') format('ttf supports variations'),
-      url('./fonts/Montserrat-Italic-VF.ttf') format('ttf-variations');
-  font-weight: 300 800;
-  font-display: swap;
-}
-

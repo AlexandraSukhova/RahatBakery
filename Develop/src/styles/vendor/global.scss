@@ -18,6 +18,7 @@ blockquote,
 fieldset {
   margin: 0;
   padding: 0;
+  line-height: var(--line-height);
 }
 
 ul,
@@ -31,12 +32,14 @@ address {
   font-style: normal;
   text-decoration: none;
   color: inherit;
+  line-height: var(--line-height);
 }
 
 button {
   border: none;
   font-family: inherit;
   color: inherit;
+  line-height: var(--line-height);
 }
 
 a,

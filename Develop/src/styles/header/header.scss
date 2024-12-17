@@ -5,8 +5,9 @@
   flex-wrap: nowrap;
   column-gap: var(--header-nav-gap);
   padding: var(--header-padding);
-  position: sticky;
-  top: 0;
+  // position: sticky;
+  // top: 0;
+  grid-area: header;
   z-index: 2;
   background-color: var(--background-color);
 }
