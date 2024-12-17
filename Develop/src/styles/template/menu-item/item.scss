@@ -1,8 +1,9 @@
 .menu__position-item {
   display: grid;
-  grid-template-areas: 'heading price'
-                       'description description'
-                       'filling .';
+  grid-template-areas:
+    "heading price"
+    "description description"
+    "filling .";
   justify-content: space-between;
   row-gap: 12px;
 }
@@ -47,7 +48,7 @@
 
 .menu__position-filling-list {
   padding-left: 25px;
-  list-style: '—  ';
+  list-style: "—  ";
   display: flex;
   flex-direction: column;
   text-transform: capitalize;

@@ -10,7 +10,8 @@
     "check": "prettier --check './**/*.{html,scss,ts}'",
     "format": "prettier --write './**/*.{html,scss,ts}'",
     "lint": "stylelint '**/*.scss'",
-    "lintfix": "stylelint '**/*.scss' --fix"
+    "lintfix": "stylelint '**/*.scss' --fix",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "sass": "^1.83.0",

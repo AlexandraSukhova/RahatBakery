@@ -40,13 +40,15 @@
 
 .menu__bread,
 .menu__desserts {
-  grid-template-areas: 'title images'
-                       'itemList images';
+  grid-template-areas:
+    "title images"
+    "itemList images";
 }
 
 .menu__main-dishes {
-  grid-template-areas: 'images title'
-                       'images itemList';
+  grid-template-areas:
+    "images title"
+    "images itemList";
 }
 
 .menu__images-list-bread {

@@ -1,8 +1,9 @@
 .section__reviews {
   display: grid;
   grid-template-rows: 152px min-content;
-  grid-template-areas: 'title download'
-                       'list list';
+  grid-template-areas:
+    "title download"
+    "list list";
   row-gap: 52px;
   align-items: flex-end;
 }

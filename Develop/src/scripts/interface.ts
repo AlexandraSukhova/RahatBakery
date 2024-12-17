@@ -9,8 +9,7 @@ export interface MenuItem {
 
 export interface ReviewItem {
   userName: string;
-  userPhoto?: string;
   reviewText: string;
 }
 
-type TMenuCategory = 'bread' | 'dishes' | 'desserts';
+type TMenuCategory = "bread" | "dishes" | "desserts";

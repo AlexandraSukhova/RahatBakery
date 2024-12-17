@@ -3,8 +3,9 @@
   grid-template-columns: 1fr min-content;
   grid-template-rows: 152px 1fr;
   gap: 52px 70px;
-  grid-template-areas: 'title logo'
-                       'description logo';
+  grid-template-areas:
+    "title logo"
+    "description description";
 }
 
 .section__about .section__title {
@@ -14,8 +15,8 @@
 
 .section__about::after {
   grid-area: logo;
-  content: '';
-  background: url('../../images/logo/rahat-bakery-logo.svg') no-repeat center;
+  content: "";
+  background: url(../../images/logo/rahat-bakery-logo.svg) no-repeat center;
   background-size: cover;
   display: block;
   width: 326px;
@@ -29,7 +30,9 @@
 }
 
 .about__description {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
   font-size: var(--paragraph-size);
   font-weight: var(--regular-text);
 }
@@ -39,6 +42,6 @@
 }
 
 .about__description:nth-child(even) {
-  max-width: 342px;
+  max-width: 519px;
   justify-self: flex-end;
 }

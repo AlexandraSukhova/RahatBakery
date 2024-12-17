@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Montserrat';
+  font-family: Montserrat;
   src:
-      local('Montserrat'),
-      url('./fonts/Montserrat-VF.woff2') format('woff2 supports variations'),
-      url('./fonts/Montserrat-VF.woff2') format('woff2-variations'),
-      url('./fonts/Montserrat-VF.ttf') format('ttf supports variations'),
-      url('./fonts/Montserrat-VF.ttf') format('ttf-variations');
+    local("Montserrat"),
+    url(./fonts/Montserrat-VF.woff2) format("woff2 supports variations"),
+    url(./fonts/Montserrat-VF.woff2) format("woff2-variations"),
+    url(./fonts/Montserrat-VF.ttf) format("ttf supports variations"),
+    url(./fonts/Montserrat-VF.ttf) format("ttf-variations");
   font-weight: 400 800;
   font-display: swap;
 }

@@ -1,5 +1,5 @@
 .contacts__subtitle::before {
-  content: '';
+  content: "";
   background-size: cover;
   background-position: center;
   width: 24px;
@@ -11,27 +11,25 @@
 }
 
 .address::before {
-  background-image: url('../../images/icons/map-point.svg');
+  background-image: url(../../images/icons/map-point.svg);
 }
 
 .phone::before {
-  background-image: url('../../images/icons/phone.svg');
+  background-image: url(../../images/icons/phone.svg);
 }
 
 .email::before {
-  background-image: url('../../images/icons/email.svg');
+  background-image: url(../../images/icons/email.svg);
 }
 
 .instagram::before {
-  background-image: url('../../images/icons/instagram.svg');
+  background-image: url(../../images/icons/instagram.svg);
 }
 
 .facebook::before {
-  background-image: url('../../images/icons/facebook.svg');
+  background-image: url(../../images/icons/facebook.svg);
 }
 
 .telegram::before {
-  background-image: url('../../images/icons/telegram.svg');
+  background-image: url(../../images/icons/telegram.svg);
 }
-
-

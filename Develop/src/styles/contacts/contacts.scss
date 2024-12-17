@@ -1,4 +1,4 @@
-@import url('./icons.scss');
+@import url(./icons.scss);
 
 .section__contacts {
   display: flex;
@@ -19,8 +19,9 @@
   display: grid;
   grid-template-columns: 1fr repeat(2, 0.5fr);
   grid-template-rows: min-content 1fr;
-  grid-template-areas: 'address contacts social'
-                      'map contacts social';
+  grid-template-areas:
+    "address contacts social"
+    "map contacts social";
   gap: 40px 60px;
 }
 

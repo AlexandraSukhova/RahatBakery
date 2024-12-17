@@ -1,6 +1,6 @@
 .section__cover {
   display: grid;
-  grid-template-areas: 'text image';
+  grid-template-areas: "text image";
   grid-template-columns: 1fr 0.85fr;
   gap: 0 60px;
   margin-right: -80px;
@@ -46,11 +46,11 @@
   bottom: 0;
   left: 0;
   transform: translateX(-50%);
-  content: '';
+  content: "";
   display: block;
   width: 326px;
   aspect-ratio: 1/1;
-  background-image: url('../../images/logo/rahat-bakery-logo.svg');
+  background-image: url(../../images/logo/rahat-bakery-logo.svg);
   background-size: cover;
   background-position: center;
 }

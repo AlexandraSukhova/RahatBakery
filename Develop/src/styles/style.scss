@@ -1,21 +1,36 @@
-@import url('./vendor/global.scss');
-@import url('./vendor/fonts.scss');
-@import url('./vendor/variable.scss');
-@import url('./button/button.scss');
-@import url('./link/link.scss');
-@import url('./copyright/copyright.scss');
-@import url('./map/map.scss');
-@import url('./header/header.scss');
-@import url('./cover/cover.scss');
-@import url('./menu/menu.scss');
-@import url('./about/about.scss');
-@import url('./reviews/reviews.scss');
-@import url('./contacts/contacts.scss');
-@import url('./footer/footer.scss');
-@import url('./template/card-image/card.scss');
-@import url('./template/menu-item/item.scss');
-@import url('./template/card-review/card.scss');
+@import url(./vendor/global.scss);
 
+@import url(./vendor/fonts.scss);
+
+@import url(./vendor/variable.scss);
+
+@import url(./button/button.scss);
+
+@import url(./link/link.scss);
+
+@import url(./copyright/copyright.scss);
+
+@import url(./map/map.scss);
+
+@import url(./header/header.scss);
+
+@import url(./cover/cover.scss);
+
+@import url(./menu/menu.scss);
+
+@import url(./about/about.scss);
+
+@import url(./reviews/reviews.scss);
+
+@import url(./contacts/contacts.scss);
+
+@import url(./footer/footer.scss);
+
+@import url(./template/card-image/card.scss);
+
+@import url(./template/menu-item/item.scss);
+
+@import url(./template/card-review/card.scss);
 
 body {
   width: 100%;
@@ -25,8 +40,9 @@ body {
   background-color: var(--background-color);
   display: grid;
   grid-template-rows: min-content 1fr;
-  grid-template-areas: 'header'
-                       'content';
+  grid-template-areas:
+    "header"
+    "content";
   align-items: stretch;
   font-family: var(--main-font-family), sans-serif;
   color: var(--text-color);
@@ -52,7 +68,7 @@ body {
 }
 
 .accent-text {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 .scrollContent {

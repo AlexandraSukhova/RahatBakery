@@ -5,10 +5,11 @@
 .review__card {
   display: grid;
   gap: 20px;
-  grid-template-areas: 'image name'
-                       'stars stars'
-                       'description description';
-  grid-template-columns: 56px 1fr;
+  grid-template-areas:
+    "name"
+    "stars"
+    "description";
+  grid-template-columns: 1fr;
   align-items: center;
 }
 
@@ -35,7 +36,7 @@
   display: block;
   width: 40px;
   aspect-ratio: 1/1;
-  background: url('../../../images/icons/star.svg') no-repeat center;
+  background: url(../../../images/icons/star.svg) no-repeat center;
   background-size: cover;
 }
 
