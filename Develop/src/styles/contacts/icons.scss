@@ -2,12 +2,11 @@
   content: "";
   background-size: cover;
   background-position: center;
-  width: 24px;
+  width: var(--icon-size);
   aspect-ratio: 1/1;
   position: absolute;
-  left: -40px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-150%, -50%);
 }
 
 .address::before {

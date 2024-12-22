@@ -1,16 +1,16 @@
-a {
+.link {
   transition: all .3s;
 }
 
-a:hover {
+.link:hover {
   color: var(--accent-color);
 }
 
-a:focus {
+.link:focus {
   border: none;
 }
 
-a:focus-visible {
+.link:focus-visible {
   outline: 2px solid #ffa11e;
   outline-offset: 5px;
   border-radius: 4px;

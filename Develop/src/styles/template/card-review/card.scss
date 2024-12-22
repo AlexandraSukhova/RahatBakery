@@ -4,19 +4,13 @@
 
 .review__card {
   display: grid;
-  gap: 20px;
+  gap: 8px;
   grid-template-areas:
     "name"
     "stars"
     "description";
   grid-template-columns: 1fr;
-  align-items: center;
-}
-
-.review__card-image {
-  grid-area: image;
-  border-radius: 50%;
-  width: 56px;
+  grid-template-rows: repeat(3, min-content);
 }
 
 .review__card-name {
@@ -34,14 +28,33 @@
 
 .review__card_star_item {
   display: block;
-  width: 40px;
+  width: var(--icon-size);
   aspect-ratio: 1/1;
   background: url(../../../images/icons/star.svg) no-repeat center;
   background-size: cover;
 }
 
 .review__card-description {
+  padding-top: 8px;
   grid-area: description;
   font-size: var(--support-text-size);
   font-weight: var(--regular-text);
+}
+
+@media (max-width: 720px) {
+  .review__card {
+    gap: 4px;
+  }
+
+  .review__card-item {
+    flex-basis: 200px;
+  }
+
+  .review__card_star-list {
+    column-gap: 2px;
+  }
+
+  .review__card-description {
+    padding-top: 0;
+  }
 }

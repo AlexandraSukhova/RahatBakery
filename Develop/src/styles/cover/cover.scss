@@ -1,9 +1,18 @@
+$img: 80px;
+$height: 650px;
+
+@if var(images-out-padding) == 40px {
+  $img: 40px;
+} @else if var(images-out-padding) == 24px {
+  $img: 24px;
+}
+
+
 .section__cover {
   display: grid;
-  grid-template-areas: "text image";
-  grid-template-columns: 1fr 0.85fr;
-  gap: 0 60px;
-  margin-right: -80px;
+  grid-template-areas: "text . image";
+  grid-template-columns: 1fr clamp(3.125rem, 0rem + 6.9444vw, 6.25rem) 1fr;
+  gap: 20px;
 }
 
 .cover__text_block {
@@ -27,18 +36,18 @@
   margin-top: 32px;
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  column-gap: var(--item-section-gap);
 }
 
 .cover__image_container {
-  max-height: 650px;
+  max-height: $height;
   position: relative;
   grid-area: image;
   z-index: 1;
-}
-
-.cover__image {
-  object-position: bottom;
+  margin-left: -$img;
+  @if $height == 650px {
+    transform: translateX($img);
+  }
 }
 
 .cover__image_container::before {
@@ -48,9 +57,74 @@
   transform: translateX(-50%);
   content: "";
   display: block;
-  width: 326px;
+  width: clamp(12.5rem, -12.9779rem + 37.0588vw, 20.375rem);
   aspect-ratio: 1/1;
   background-image: url(../../images/logo/rahat-bakery-logo.svg);
   background-size: cover;
   background-position: center;
+}
+
+
+@media (max-width: 1100px) {
+  $height: 410px;
+
+  .cover__title {
+    margin-bottom: 8px;
+  }
+
+  .cover__button-container .button:last-child {
+    display: none;
+  }
+
+  .cover__button-container .button-main {
+    min-width: 193px;
+  }
+
+  .cover__description {
+    max-width: 250px;
+  }
+
+  .cover__image_container::before {
+    width: 148px;
+  }
+
+  .cover__image_container {
+    max-height: $height;
+    @if $height != 650px {
+      transform: translateX(var(--images-out-padding));
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .section__cover {
+    position: relative;
+    margin-right: 0px;
+    grid-template-areas: "text" "image";
+    grid-template-columns: 1fr;
+    gap: 12px 0;
+    }
+
+    .cover__title {
+      margin-bottom: 4px;
+    }
+
+    .cover__image_container {
+      height: 103px;
+      margin-right: -24px;
+      margin-left: -24px;
+      transform: none;
+    }
+
+    .cover__image_container img {
+      position: absolute;
+    }
+
+    .cover__image_container::before {
+      display: none;
+    }
+
+    .cover__button-container {
+      display: none;
+    }
 }

@@ -5,7 +5,8 @@
     "description description"
     "filling .";
   justify-content: space-between;
-  row-gap: 12px;
+  align-content: flex-start;
+  row-gap: clamp(0.5rem, -0.5227rem + 3.6364vw, 0.75rem);
 }
 
 .menu__position-header {
@@ -44,6 +45,7 @@
 
 .filling-container {
   grid-area: filling;
+  max-width: 135px;
 }
 
 .menu__position-filling-list {

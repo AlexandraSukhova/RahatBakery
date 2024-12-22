@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content;
   grid-template-rows: 152px 1fr;
-  gap: 52px 70px;
+  gap: var(--header-section-gap) 70px;
   grid-template-areas:
     "title logo"
     "description description";
@@ -11,6 +11,7 @@
 .section__about .section__title {
   grid-area: title;
   align-self: center;
+  white-space: nowrap;
 }
 
 .section__about::after {
@@ -26,13 +27,13 @@
 .about__description_container {
   grid-area: description;
   display: grid;
-  row-gap: 24px;
+  row-gap: var(--item-section-gap);
 }
 
 .about__description {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  row-gap: var(--item-section-gap);
   font-size: var(--paragraph-size);
   font-weight: var(--regular-text);
 }
@@ -44,4 +45,40 @@
 .about__description:nth-child(even) {
   max-width: 519px;
   justify-self: flex-end;
+}
+
+@media (max-width: 1100px) {
+  .section__about {
+    grid-template-rows: 100px 1fr;
+    gap: 20px 40px;
+  }
+
+  .section__about .section__title {
+    align-self: flex-start;
+  }
+
+  .about__description:nth-child(odd) {
+    max-width: 550px;
+  }
+
+  .section__about::after {
+    width: 150px;
+  }
+}
+
+@media (max-width: 720px) {
+  .section__about {
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: repeat(2, min-content);
+    gap: 20px 40px;
+    grid-template-areas:
+    "title ."
+    "description logo";
+    justify-content: space-between;
+  }
+
+  .section__about::after {
+    width: 115px;
+    align-self: end;
+  }
 }

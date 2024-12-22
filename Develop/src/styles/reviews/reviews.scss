@@ -1,16 +1,16 @@
 .section__reviews {
   display: grid;
-  grid-template-rows: 152px min-content;
+  grid-template-rows: min-content;
   grid-template-areas:
     "title download"
     "list list";
-  row-gap: 52px;
+  row-gap: var(--header-section-gap);
   align-items: flex-end;
 }
 
 .section__reviews .section__title {
   grid-area: title;
-  line-height: 75%;
+  line-height: 1;
 }
 
 .about__link {
@@ -23,4 +23,16 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+  .section__reviews {
+    grid-template-rows: min-content;
+    row-gap: 16px;
+    align-items: end;
+  }
+
+  .section__reviews_list {
+    gap: 20px;
+  }
 }

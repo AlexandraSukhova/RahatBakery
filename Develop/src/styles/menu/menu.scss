@@ -1,7 +1,7 @@
 .section__menu {
   display: flex;
   flex-direction: column;
-  row-gap: 52px;
+  row-gap: var(--header-section-gap);
 }
 
 .section__menu-list {
@@ -12,8 +12,8 @@
 
 .section__menu-item {
   display: grid;
-  gap: 32px;
-  grid-template-columns: repeat(2, min-content);
+  gap: 32px 108px;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: min-content 1fr;
   justify-content: space-between;
 }
@@ -23,19 +23,17 @@
 }
 
 .menu__position-list {
-  min-width: 411px;
   grid-area: itemList;
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  row-gap: 10px;
 }
 
 .menu__images-list {
-  min-width: 737px;
   grid-area: images;
   display: grid;
   grid-template-columns: 1fr 0.73fr;
-  gap: 24px;
+  gap: var(--item-section-gap);
 }
 
 .menu__bread,
@@ -46,13 +44,14 @@
 }
 
 .menu__main-dishes {
+  grid-template-columns: 2fr 1fr;
   grid-template-areas:
     "images title"
     "images itemList";
 }
 
 .menu__images-list-bread {
-  grid-template-rows: 411px;
+  grid-template-rows: 440px;
 }
 
 .menu__images-list-dishes {
@@ -60,7 +59,7 @@
 }
 
 .menu__images-list-desserts {
-  grid-template-rows: 332px 397px;
+  grid-template-rows: 335px 400px;
 }
 
 .menu__images-list-desserts li:last-child {
@@ -69,4 +68,82 @@
 
 .menu__images-list-dishes li:first-child {
   grid-row: 1 / span 2;
+}
+
+.section__menu-item .button-main {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .section__menu-item {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+  }
+
+  .menu__bread,
+  .menu__desserts,
+  .menu__main-dishes {
+    grid-template-areas: 'title'
+    'itemList'
+    'images'
+    'button';
+  }
+
+  .menu__images-list {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 24px;
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    max-height: clamp(12.5rem, 3.9737rem + 18.9474vw, 17rem);
+  }
+
+  .menu__images-list li {
+    flex: 1 0 clamp(12.5rem, -12.4868rem + 55.5263vw, 25.6875rem);
+  }
+
+  .menu__position-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px 32px;
+  }
+
+  .menu__position-list li {
+    width: clamp(18.1875rem, 5.2796rem + 28.6842vw, 25rem);;
+  }
+
+  .section__menu-item .button-main {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    grid-area: button;
+    display: block;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 720px) {
+  .section__menu-item {
+    row-gap: 16px;
+  }
+
+  .menu__position-list {
+    flex-direction: column;
+    gap: 5px 0;
+  }
+
+  .menu__position-list li {
+    width: 100%;
+  }
+
+  .menu__images-list {
+    max-height: clamp(7.5rem, -0.8333rem + 29.6296vw, 12.5rem);
+    column-gap: 8px;
+  }
+
+  .menu__images-list li {
+    flex-basis: clamp(7.5rem, -0.8333rem + 29.6296vw, 12.5rem);
+  }
 }

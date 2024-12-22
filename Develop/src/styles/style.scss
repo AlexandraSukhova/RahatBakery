@@ -34,7 +34,7 @@
 
 body {
   width: 100%;
-  min-width: 1300px;
+  min-width: 375px;
   min-height: 100dvh;
   margin: 0 auto;
   background-color: var(--background-color);
@@ -43,7 +43,8 @@ body {
   grid-template-areas:
     "header"
     "content";
-  align-items: stretch;
+  justify-content: center;
+  align-content: space-between;
   font-family: var(--main-font-family), sans-serif;
   color: var(--text-color);
 }
@@ -72,9 +73,8 @@ body {
 }
 
 .scrollContent {
-  align-self: flex-end;
   grid-area: content;
-  max-height: calc(100dvh - 93px);
+  max-height: var(--content-section-height);
   display: flex;
   flex-direction: column;
   overflow: auto;

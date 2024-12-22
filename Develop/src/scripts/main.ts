@@ -16,6 +16,12 @@ const reviewList = ".section__reviews_list";
 const menuImage = "menu__images";
 const menuPosition = "menu__position";
 const reviewItem = "review__card";
+const buyButton = ensureElement<HTMLLinkElement>(".header__button");
+const menuButton = ensureElement<HTMLLinkElement>(".header__nav_list-link-menu");
+const contactsButton = ensureElement<HTMLLIElement>(".header__nav_list-link-contacts");
+
+const mqMedium = window.matchMedia('(max-width: 1100px)').matches;
+const mqSmall = window.matchMedia('(max-width: 720px)').matches;
 
 const cover = document.querySelector<HTMLImageElement>(".cover__image");
 if (cover) {
@@ -72,3 +78,7 @@ function addReviewCards(cardInfo: ReviewItem[]) {
 
 addMenuCards(menu);
 addReviewCards(review);
+
+mqMedium ? buyButton.textContent = 'buy' : buyButton.textContent = 'Buy on grab';
+mqMedium ? menuButton.textContent = 'menu' : menuButton.textContent = 'our menu';
+mqSmall ? contactsButton.textContent = 'contacts' : 'contacts & job';

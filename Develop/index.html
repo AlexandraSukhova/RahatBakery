@@ -7,20 +7,20 @@
       type="image/svg+xml"
       href="./public/Rahat-Bakery-Logo.svg"
     />
+    <link rel="shortcut icon" type="image/png" href="./public/rahat-bakery-logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Freshly baked tandoor bread and authentic Uzbek & Tatar cuisine in Da Nang" />
+    <meta property="og:image" content="./public/preview.png" />
+    <meta property="og:description" content="Freshly baked tandoor bread and authentic Uzbek & Tatar cuisine in Da Nang" />
+    <meta property="og:title" content="Rahat Bakery" />
     <title>Rahat Bakery</title>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
   </head>
   <body>
     <header class="header">
       <nav class="header__nav">
         <ul class="header__nav_list">
           <li class="header__nav_list-item header__nav_list-dropdown">
-            <a href="#0" class="header__nav_list-link">our menu</a>
+            <a href="#0" class="header__nav_list-link link header__nav_list-link-menu">our menu</a>
             <svg
               class="chevron"
               width="24"
@@ -38,24 +38,24 @@
             </svg>
             <ul class="dropdown__menu-list">
               <li class="dropdown__menu-item">
-                <a href="#bread" class="dropdown__menu-link">bread</a>
+                <a href="#bread" class="dropdown__menu-link link">bread</a>
               </li>
               <li class="dropdown__menu-item">
-                <a href="#dishes" class="dropdown__menu-link">main dishes</a>
+                <a href="#dishes" class="dropdown__menu-link link">main dishes</a>
               </li>
               <li class="dropdown__menu-item">
-                <a href="#desserts" class="dropdown__menu-link">desserts</a>
+                <a href="#desserts" class="dropdown__menu-link link">desserts</a>
               </li>
             </ul>
           </li>
           <li class="header__nav_list-item">
-            <a href="#about" class="header__nav_list-link">about us</a>
+            <a href="#about" class="header__nav_list-link link">about us</a>
           </li>
           <li class="header__nav_list-item">
-            <a href="#reviews" class="header__nav_list-link">reviews</a>
+            <a href="#reviews" class="header__nav_list-link link">reviews</a>
           </li>
           <li class="header__nav_list-item">
-            <a href="#contacts" class="header__nav_list-link">contacts & job</a>
+            <a href="#contacts" class="header__nav_list-link link header__nav_list-link-contacts">contacts & job</a>
           </li>
         </ul>
       </nav>
@@ -63,7 +63,7 @@
         href="https://r.grab.com/g/6-20241217_171639_D6994E3219F9415DB4FA9E14B47E3A8F_MEXMPS-5-C6LCATXURGJZJJ"
         target="_blank"
         rel="noopener noreferrer"
-        class="button button-main"
+        class="button button-main header__button"
         >Buy on grab</a
       >
     </header>
@@ -96,7 +96,7 @@
             </div>
           </div>
           <div class="cover__image_container">
-            <img class="cover__image" src="" alt="" />
+            <img class="cover__image" src="" alt="Cover image with baked goods" />
           </div>
         </section>
         <section class="section__menu section" id="menu">
@@ -106,16 +106,37 @@
               <h3 class="section__subtitle accent-text">bread</h3>
               <ul class="menu__position-list menu__position-list-bread"></ul>
               <ul class="menu__images-list menu__images-list-bread"></ul>
+              <a
+              href="https://r.grab.com/g/6-20241217_171639_D6994E3219F9415DB4FA9E14B47E3A8F_MEXMPS-5-C6LCATXURGJZJJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-main"
+              >Buy on grab</a
+            >
             </li>
             <li class="section__menu-item menu__main-dishes" id="dishes">
               <h3 class="section__subtitle accent-text">Main Dishes</h3>
               <ul class="menu__position-list menu__position-list-dishes"></ul>
               <ul class="menu__images-list menu__images-list-dishes"></ul>
+              <a
+              href="https://r.grab.com/g/6-20241217_171639_D6994E3219F9415DB4FA9E14B47E3A8F_MEXMPS-5-C6LCATXURGJZJJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-main"
+              >Buy on grab</a
+            >
             </li>
             <li class="section__menu-item menu__desserts" id="desserts">
               <h3 class="section__subtitle accent-text">Desserts</h3>
               <ul class="menu__position-list menu__position-list-desserts"></ul>
               <ul class="menu__images-list menu__images-list-desserts"></ul>
+              <a
+              href="https://r.grab.com/g/6-20241217_171639_D6994E3219F9415DB4FA9E14B47E3A8F_MEXMPS-5-C6LCATXURGJZJJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-main"
+              >Buy on grab</a
+            >
             </li>
           </ul>
         </section>
@@ -140,7 +161,7 @@
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
-            class="about__link section__subtitle accent-text"
+            class="about__link section__subtitle accent-text link"
             >view all</a
           >
           <ul class="section__reviews_list"></ul>
@@ -157,7 +178,7 @@
             <address class="contacts__address">
               <h4 class="contacts__subtitle address">address</h4>
               <p class="contacts__address_description">
-                26 Mỹ Đa Đông 3, Bắc Mỹ An, Ngũ Hành Sơn, Đà Nẵng 550000
+                26 Mỹ Đa Đông 3, Bắc Mỹ An, Ngũ Hành Sơn,<br> Đà Nẵng 550000
                 <span>
                   Everyday
                   <span class="contacts__address_time">09:00 — 18:00</span>
@@ -167,16 +188,16 @@
             <ul class="contacts__link-list">
               <li class="contacts__link-item">
                 <h4 class="contacts__subtitle phone">phone</h4>
-                <a href="tel:+0987371253" class="contacts__link"
+                <a href="tel:+0987371253" class="contacts__link link"
                   >0987 371 253 (Vn)</a
                 >
-                <a href="tel:+0372800713" class="contacts__link"
+                <a href="tel:+0372800713" class="contacts__link link"
                   >0372 800 713 (Eng)</a
                 >
               </li>
               <li class="contacts__link-item">
                 <h4 class="contacts__subtitle email">email</h4>
-                <a href="mailto:hello@rahetbakery.com" class="contacts__link">
+                <a href="mailto:hello@rahetbakery.com" class="contacts__link link">
                   hello@rahetbakery.com
                 </a>
               </li>
@@ -188,7 +209,7 @@
                   href="https://www.instagram.com/rahat_bakery_"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="contacts__link"
+                  class="contacts__link link"
                   >rahat_bakery_</a
                 >
               </li>
@@ -198,7 +219,7 @@
                   href="https://t.me/rahat_bakery_danang"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="contacts__link"
+                  class="contacts__link link"
                   >rahat_bakery_danang</a
                 >
               </li>
@@ -208,7 +229,7 @@
                   href="https://www.facebook.com/share/V8TRsEnr7BpYuMnw/?mibextid=LQQJ4d"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="contacts__link"
+                  class="contacts__link link"
                   >rahat.bakery.dn</a
                 >
               </li>
@@ -231,23 +252,23 @@
         <nav class="footer__nav">
           <ul class="footer__nav_list">
             <li class="footer__nav_item">
-              <a href="#menu" class="footer__nav_link">our menu</a>
+              <a href="#menu" class="footer__nav_link link">our menu</a>
             </li>
             <li class="footer__nav_item">
-              <a href="#about" class="footer__nav_link">about us</a>
+              <a href="#about" class="footer__nav_link link">about us</a>
             </li>
             <li class="footer__nav_item">
-              <a href="#reviews" class="footer__nav_link">reviews</a>
+              <a href="#reviews" class="footer__nav_link link">reviews</a>
             </li>
             <li class="footer__nav_item">
-              <a href="#contacts" class="footer__nav_link">contacts & job</a>
+              <a href="#contacts" class="footer__nav_link link">contacts & job</a>
             </li>
           </ul>
         </nav>
-        <a href="#cover" class="footer__logo">
+        <a href="#cover" class="footer__logo link">
           <img
             class="logo__image"
-            alt=""
+            alt="logo"
             src="./public/Rahat-Bakery-Logo.svg"
           />
         </a>
@@ -257,7 +278,7 @@
               href="https://r.grab.com/g/6-20241217_171639_D6994E3219F9415DB4FA9E14B47E3A8F_MEXMPS-5-C6LCATXURGJZJJ"
               target="_blank"
               rel="noopener noreferrer"
-              class="social__link"
+              class="social__link link"
               >Grab</a
             >
           </li>
@@ -266,7 +287,7 @@
               href="https://www.instagram.com/rahat_bakery_"
               target="_blank"
               rel="noopener noreferrer"
-              class="social__link"
+              class="social__link link"
               >Instagram</a
             >
           </li>
@@ -275,7 +296,7 @@
               href="https://www.facebook.com/share/V8TRsEnr7BpYuMnw/?mibextid=LQQJ4d"
               target="_blank"
               rel="noopener noreferrer"
-              class="social__link"
+              class="social__link link"
               >Facebook</a
             >
           </li>
@@ -284,7 +305,7 @@
               href="https://t.me/rahat_bakery_danang"
               target="_blank"
               rel="noopener noreferrer"
-              class="social__link"
+              class="social__link link"
               >telegram</a
             >
           </li>
@@ -292,13 +313,12 @@
         <p class="copyright">© 2024 Rahat Bakery All rights reserved</p>
       </footer>
     </div>
-    <script type="module" src="./src/scripts/main.ts"></script>
 
     <template id="card-image">
       <li class="menu__images-item">
         <article class="menu__images-card">
           <img
-            src="./src/images/apple-pie.jpg"
+            src=""
             alt=""
             class="menu__images-image"
           />
@@ -346,5 +366,6 @@
         </article>
       </li>
     </template>
+    <script type="module" src="./src/scripts/main.ts"></script>
   </body>
 </html>

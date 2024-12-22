@@ -1,3 +1,8 @@
+html {
+  block-size: 100%;
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -19,6 +24,7 @@ fieldset {
   margin: 0;
   padding: 0;
   line-height: var(--line-height);
+  text-align: start;
 }
 
 ul,
@@ -33,6 +39,7 @@ address {
   text-decoration: none;
   color: inherit;
   line-height: var(--line-height);
+  text-align: center;
 }
 
 button {
