@@ -4,6 +4,7 @@ export function createMenuImageCard(
   cardInfo: MenuItem,
   blockName: string,
   container: HTMLTemplateElement,
+  mq: boolean,
 ) {
   const cardContainer = container.content.cloneNode(true) as HTMLElement;
   const cardItem = cardContainer.querySelector(
@@ -20,6 +21,7 @@ export function createMenuImageCard(
   const cardImage = ImageCard.querySelector(
     `.${blockName}-image`,
   ) as HTMLImageElement;
+  const cardButton = ImageCard.querySelector(".button") as HTMLButtonElement;
 
   cardHeader.textContent = cardInfo.name;
   cardDescription.textContent = cardInfo.description;
@@ -27,6 +29,10 @@ export function createMenuImageCard(
     ? (cardImage.src = cardInfo.imgUrl)
     : console.log("Изображение не найдено");
   cardImage.alt = cardInfo.name;
+
+  mq
+    ? (cardButton.textContent = "buy")
+    : (cardButton.textContent = "buy on grab");
 
   return cardItem;
 }

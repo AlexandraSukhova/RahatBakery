@@ -80,35 +80,33 @@
 }
 
 @media (max-width: 1100px) {
+
   .section__contacts {
     padding-bottom: 0;
-    row-gap: 24px;
+    row-gap: var(--item-section-gap);
   }
 
   .contacts-container {
     grid-template-columns: min-content;
     grid-template-areas:
-    "address contacts social"
-    "map map map";
+      "address contacts social"
+      "map map map";
     gap: 40px 60px;
   }
-    
-    .contacts__social_link-list {
-      justify-self: end;
-    }
+
+  .contacts__social_link-list {
+    justify-self: end;
+  }
 }
 
 @media (max-width: 720px) {
-  .section__contacts {
-    row-gap: 16px;
-  }
 
   .contacts-container {
     width: 100%;
     grid-template-areas:
-    "address address"
-    "map map"
-    "contacts social";
+      "address address"
+      "map map"
+      "contacts social";
     gap: 20px 0;
     padding: 0 clamp(1.25rem, -0.1087rem + 5.7971vw, 2.5rem);
   }

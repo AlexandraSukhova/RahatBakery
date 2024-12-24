@@ -12,4 +12,4 @@ export interface ReviewItem {
   reviewText: string;
 }
 
-type TMenuCategory = "bread" | "dishes" | "desserts";
+type TMenuCategory = "bread" | "dishes" | "desserts" | "dairy";

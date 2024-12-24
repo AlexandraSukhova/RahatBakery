@@ -18,7 +18,6 @@ export function createReviewCard(
     `.${blockName}-description`,
   ) as HTMLParagraphElement;
 
-
   cardHeader.textContent = cardInfo.userName;
   cardDescription.textContent = cardInfo.reviewText;
 

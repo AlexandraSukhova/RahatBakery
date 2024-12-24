@@ -57,6 +57,7 @@
   font-size: var(--support-text-size);
   font-weight: var(--regular-text);
   color: var(--service-color);
+  white-space: nowrap;
 }
 
 .menu__position-filling-list li {

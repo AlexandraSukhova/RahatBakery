@@ -12,7 +12,7 @@
   position: absolute;
   inset: 0;
   background-color: rgb(253 178 72 / 0.8);
-  padding: 24px;
+  padding: var(--item-section-gap);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,4 +53,47 @@
 .menu__images-item:hover .menu__images-overlay {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 1100px) {
+
+  .menu__images-header {
+    font-size: clamp(1rem, 0.0526rem + 2.1053vw, 1.5rem);
+  }
+
+  .menu__images-description {
+    font-size: clamp(0.75rem, 0.2763rem + 1.0526vw, 1rem);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .menu__images-overlay {
+    padding: clamp(0.625rem, -0.0543rem + 2.8986vw, 1.25rem);
+  }
+
+  .menu__images-text {
+    row-gap: 5px;
+  }
+
+  .menu__images-header {
+    font-size: clamp(0.75rem, 0.4783rem + 1.1594vw, 1rem);
+  }
+
+  .menu__images-description {
+    font-size: clamp(0.625rem, 0.4891rem + 0.5797vw, 0.75rem);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  .menu__images-item .button-main {
+    font-size: 10px;
+    padding: 4px 12px;
+  }
 }

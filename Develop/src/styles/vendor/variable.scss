@@ -28,6 +28,7 @@
 }
 
 @media (max-width: 1100px) {
+
   :root {
     --line-height: 120%;
     --page-padding: 0 40px;
@@ -42,11 +43,12 @@
 }
 
 @media (max-width: 720px) {
+
   :root {
     --content-section-height: calc(100dvh - 54px);
     --header-section-gap: 16px;
     --header-nav-gap: 12px;
-    --header-padding: 12px 24px;
+    --header-padding: 12px clamp(0.75rem, -3rem + 16vw, 1.5rem);
     --section-gap: 48px;
     --inner-section-gap: 40px;
     --page-padding: 0 24px;

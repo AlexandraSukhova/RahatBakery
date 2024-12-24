@@ -6,7 +6,7 @@ import sourCreamPie from "../images/sour-cream-pie.jpg";
 import tandoorBread from "../images/tandoor-bread.jpg";
 import tatarManti from "../images/tatar-manti.jpg";
 import sandwichBread from "../images/sandwich-bread.jpg";
-import vegetarianSamsa from "../images/vegetarian-samsa.jpg";
+import kefir from "../images/kefir.jpg"
 
 export const menu: MenuItem[] = [
   {
@@ -43,14 +43,6 @@ export const menu: MenuItem[] = [
     category: "dishes",
   },
   {
-    name: "vegetarian samsa",
-    price: "30",
-    description:
-      "Puff pastry, mozzarella cheese, straw mushrooms, onions, sesame, butter, egg, salt",
-    imgUrl: vegetarianSamsa,
-    category: "dishes",
-  },
-  {
     name: "Pilaf",
     price: "100",
     description:
@@ -65,16 +57,51 @@ export const menu: MenuItem[] = [
     category: "dishes",
   },
   {
-    name: "vegetarian curry",
-    price: "25",
-    description:
-      "Sweet potato, taro, carrots, green beans, mushrooms, onions, coconut milk,  lemongrass, curry",
+    name: "Beef Tongue Julienne",
+    price: "75",
+    description: "Beef tongue, mushrooms, mozarella, onion, whipping cream",
+    category: "dishes",
+  },
+  {
+    name: "Lula-Kebab in Dough",
+    price: "50",
+    description: "Beef, onion, zira, pepper, puff pastry",
+    category: "dishes",
+  },
+  {
+    name: "Liver Cake",
+    price: "45",
+    description: "Beef liver, egg, carrot, onion, cheese, garlic, homemade mayo, cilantro, dill",
+    category: "dishes",
+  },
+  {
+    name: "Minced Beef Pancake ",
+    price: "35",
+    description: "Minced beef, onion, pepper, flour, egg, milk",
+    category: "dishes",
+  },
+  {
+    name: "Pizza Calzone",
+    price: "60",
+    description: "Chicken, straw mushrooms, mozarella, salted cucumber, bell pepper, tomato sauce",
+    category: "dishes",
+  },
+  {
+    name: "Pumpkin soup",
+    price: "35",
+    description: "Pumpkin, whipping cream, pumpkin seeds, mozarella",
     category: "dishes",
   },
   {
     name: "beef stew",
     price: "35",
     description: "Beef, carrots, onions, braised beef sauce, lemongrass",
+    category: "dishes",
+  },
+  {
+    name: "Korean Carrot",
+    price: "40",
+    description: "Carrot, vinegar, garlic, pepper",
     category: "dishes",
   },
   {
@@ -105,9 +132,21 @@ export const menu: MenuItem[] = [
     category: "desserts",
   },
   {
-    name: "oat cookies",
-    price: "5",
+    name: "oat cookie",
+    price: "6",
     description: "Oat flakes, butter, egg, sugar, baking powder",
+    category: "desserts",
+  },
+  {
+    name: "сottage cheese puff pastry",
+    price: "25",
+    description: "Puff pastry, sugar, сottage cheese",
+    category: "desserts",
+  },
+  {
+    name: "cottage cheese pie",
+    price: "40",
+    description: "Cottage cheese, flour, butter, sugar, egg",
     category: "desserts",
   },
   {
@@ -123,6 +162,31 @@ export const menu: MenuItem[] = [
     ],
     imgUrl: puffPastryWithJam,
     category: "desserts",
+  },
+  {
+    name: "homemade sour cream",
+    price: "75",
+    description: "300 g",
+    category: "dairy",
+  },
+  {
+    name: "ryazhenka",
+    price: "65",
+    description: "330 ml",
+    category: "dairy",
+  },
+  {
+    name: "kefir",
+    price: "50",
+    description: "330 ml",
+    imgUrl: kefir,
+    category: "dairy",
+  },
+  {
+    name: "snowball",
+    price: "50",
+    description: "330 ml",
+    category: "dairy",
   },
 ];
 

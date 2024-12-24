@@ -17,11 +17,15 @@ const menuImage = "menu__images";
 const menuPosition = "menu__position";
 const reviewItem = "review__card";
 const buyButton = ensureElement<HTMLLinkElement>(".header__button");
-const menuButton = ensureElement<HTMLLinkElement>(".header__nav_list-link-menu");
-const contactsButton = ensureElement<HTMLLIElement>(".header__nav_list-link-contacts");
+const menuButton = ensureElement<HTMLLinkElement>(
+  ".header__nav_list-link-menu",
+);
+const contactsButton = ensureElement<HTMLLIElement>(
+  ".header__nav_list-link-contacts",
+);
 
-const mqMedium = window.matchMedia('(max-width: 1100px)').matches;
-const mqSmall = window.matchMedia('(max-width: 720px)').matches;
+export const mqMedium = window.matchMedia("(max-width: 1100px)").matches;
+export const mqSmall = window.matchMedia("(max-width: 720px)").matches;
 
 const cover = document.querySelector<HTMLImageElement>(".cover__image");
 if (cover) {
@@ -46,6 +50,11 @@ function addMenuCards(cardInfo: MenuItem[]) {
             `.${menuPositionList}-dishes`,
             createMenuPositionCard(i, menuPosition, cardItem),
           )
+          : i.category === "dairy"
+          ? renderCard(
+              `.${menuPositionList}-dairy`,
+              createMenuPositionCard(i, menuPosition, cardItem),
+            )
         : renderCard(
             `.${menuPositionList}-desserts`,
             createMenuPositionCard(i, menuPosition, cardItem),
@@ -55,16 +64,21 @@ function addMenuCards(cardInfo: MenuItem[]) {
       i.category === "bread"
         ? renderCard(
             `.${menuImagesList}-bread`,
-            createMenuImageCard(i, menuImage, cardImage),
+            createMenuImageCard(i, menuImage, cardImage, mqSmall),
           )
         : i.category === "dishes"
           ? renderCard(
               `.${menuImagesList}-dishes`,
-              createMenuImageCard(i, menuImage, cardImage),
+              createMenuImageCard(i, menuImage, cardImage, mqSmall),
             )
+            : i.category === "dairy"
+            ? renderCard(
+                `.${menuImagesList}-dairy`,
+                createMenuImageCard(i, menuImage, cardImage, mqSmall),
+              )
           : renderCard(
               `.${menuImagesList}-desserts`,
-              createMenuImageCard(i, menuImage, cardImage),
+              createMenuImageCard(i, menuImage, cardImage, mqSmall),
             );
     }
   });
@@ -79,6 +93,10 @@ function addReviewCards(cardInfo: ReviewItem[]) {
 addMenuCards(menu);
 addReviewCards(review);
 
-mqMedium ? buyButton.textContent = 'buy' : buyButton.textContent = 'Buy on grab';
-mqMedium ? menuButton.textContent = 'menu' : menuButton.textContent = 'our menu';
-mqSmall ? contactsButton.textContent = 'contacts' : 'contacts & job';
+mqMedium
+  ? (buyButton.textContent = "buy")
+  : (buyButton.textContent = "Buy on grab");
+mqMedium
+  ? (menuButton.textContent = "menu")
+  : (menuButton.textContent = "our menu");
+mqSmall ? (contactsButton.textContent = "contacts") : "contacts & job";

@@ -48,6 +48,7 @@
 }
 
 @media (max-width: 1100px) {
+
   .section__about {
     grid-template-rows: 100px 1fr;
     gap: 20px 40px;
@@ -67,18 +68,19 @@
 }
 
 @media (max-width: 720px) {
+
   .section__about {
     grid-template-rows: min-content 1fr;
     grid-template-columns: repeat(2, min-content);
     gap: 20px 40px;
     grid-template-areas:
-    "title ."
-    "description logo";
+      "title ."
+      "description logo";
     justify-content: space-between;
   }
 
   .section__about::after {
-    width: 115px;
+    width: clamp(6.25rem, 1.5625rem + 20vw, 7.1875rem);
     align-self: end;
   }
 }
