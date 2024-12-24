@@ -6,52 +6,52 @@ import sourCreamPie from "../images/sour-cream-pie.jpg";
 import tandoorBread from "../images/tandoor-bread.jpg";
 import tatarManti from "../images/tatar-manti.jpg";
 import sandwichBread from "../images/sandwich-bread.jpg";
-import kefir from "../images/kefir.jpg"
+import kefir from "../images/kefir.jpg";
 
 export const menu: MenuItem[] = [
   {
     name: "Tandoor bread",
-    price: "15 / 20",
+    price: "20 / 25",
     description: "Wheat flour, salt, yeast, sesame",
     imgUrl: tandoorBread,
     category: "bread",
   },
   {
     name: "Rye bread",
-    price: "25",
+    price: "30",
     description: "Rye flour, wheat flour, yeast, sugar, salt",
     category: "bread",
   },
   {
     name: "Sandwich bread",
-    price: "15",
+    price: "20",
     description: "Wheat flour, yeast, egg, margarine, salt",
     imgUrl: sandwichBread,
     category: "bread",
   },
   {
     name: "raisin bread",
-    price: "15",
+    price: "20",
     description: "Wheat flour, yeast, raisins, egg, margarine, sugar, salt",
     category: "bread",
   },
   {
     name: "lamb samsa",
-    price: "45",
+    price: "55",
     description: "Puff pastry, lamb, onion, sesame, cumin, egg, salt",
     imgUrl: lambSamsa,
     category: "dishes",
   },
   {
     name: "Pilaf",
-    price: "100",
+    price: "120",
     description:
       "Rice, lamb, carrots, chickpeas, onions, cumin, garlic, black pepper, salt, vegetable oil",
     category: "dishes",
   },
   {
     name: "Tatar manti",
-    price: "85",
+    price: "100",
     description: "Beef, potatoes, onions, dough, butter, pepper, salt",
     imgUrl: tatarManti,
     category: "dishes",
@@ -71,19 +71,21 @@ export const menu: MenuItem[] = [
   {
     name: "Liver Cake",
     price: "45",
-    description: "Beef liver, egg, carrot, onion, cheese, garlic, homemade mayo, cilantro, dill",
+    description:
+      "Beef liver, egg, carrot, onion, cheese, garlic, homemade mayo, cilantro, dill",
     category: "dishes",
   },
   {
     name: "Minced Beef Pancake ",
-    price: "35",
+    price: "40",
     description: "Minced beef, onion, pepper, flour, egg, milk",
     category: "dishes",
   },
   {
     name: "Pizza Calzone",
     price: "60",
-    description: "Chicken, straw mushrooms, mozarella, salted cucumber, bell pepper, tomato sauce",
+    description:
+      "Chicken, straw mushrooms, mozarella, salted cucumber, bell pepper, tomato sauce",
     category: "dishes",
   },
   {
@@ -94,7 +96,7 @@ export const menu: MenuItem[] = [
   },
   {
     name: "beef stew",
-    price: "35",
+    price: "40",
     description: "Beef, carrots, onions, braised beef sauce, lemongrass",
     category: "dishes",
   },
@@ -106,21 +108,21 @@ export const menu: MenuItem[] = [
   },
   {
     name: "sour cream pie",
-    price: "25",
+    price: "30",
     description: "Homemade sour cream, flour, butter, sugar, vanillin, egg",
     imgUrl: sourCreamPie,
     category: "desserts",
   },
   {
     name: "sponge cake",
-    price: "10",
+    price: "15",
     description:
       "Wheat flour, pastry flour, egg, milk, sugar, corn starch, salt",
     category: "desserts",
   },
   {
     name: "Apple pie",
-    price: "25",
+    price: "30",
     description: "Apples, flour, butter, sugar, egg, cinnamon, cocoa",
     imgUrl: applePie,
     category: "desserts",
@@ -144,19 +146,19 @@ export const menu: MenuItem[] = [
     category: "desserts",
   },
   {
-    name: "cottage cheese pie",
+    name: "cottage cheese sochnik",
     price: "40",
     description: "Cottage cheese, flour, butter, sugar, egg",
     category: "desserts",
   },
   {
     name: "puff pastry with jam",
-    price: "15",
+    price: "20",
     description: "Puff pastry, sugar, egg",
     filling: [
       "pineapple",
       "passion fruit",
-      "mulberry",
+      "berry mix",
       "apple-cinnamon",
       "honey-peach",
     ],

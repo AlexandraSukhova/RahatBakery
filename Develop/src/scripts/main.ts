@@ -50,15 +50,15 @@ function addMenuCards(cardInfo: MenuItem[]) {
             `.${menuPositionList}-dishes`,
             createMenuPositionCard(i, menuPosition, cardItem),
           )
-          : i.category === "dairy"
+        : i.category === "dairy"
           ? renderCard(
               `.${menuPositionList}-dairy`,
               createMenuPositionCard(i, menuPosition, cardItem),
             )
-        : renderCard(
-            `.${menuPositionList}-desserts`,
-            createMenuPositionCard(i, menuPosition, cardItem),
-          );
+          : renderCard(
+              `.${menuPositionList}-desserts`,
+              createMenuPositionCard(i, menuPosition, cardItem),
+            );
 
     if (i.imgUrl) {
       i.category === "bread"
@@ -71,15 +71,15 @@ function addMenuCards(cardInfo: MenuItem[]) {
               `.${menuImagesList}-dishes`,
               createMenuImageCard(i, menuImage, cardImage, mqSmall),
             )
-            : i.category === "dairy"
+          : i.category === "dairy"
             ? renderCard(
                 `.${menuImagesList}-dairy`,
                 createMenuImageCard(i, menuImage, cardImage, mqSmall),
               )
-          : renderCard(
-              `.${menuImagesList}-desserts`,
-              createMenuImageCard(i, menuImage, cardImage, mqSmall),
-            );
+            : renderCard(
+                `.${menuImagesList}-desserts`,
+                createMenuImageCard(i, menuImage, cardImage, mqSmall),
+              );
     }
   });
 }

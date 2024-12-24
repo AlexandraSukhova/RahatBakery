@@ -24,7 +24,7 @@
 }
 
 .menu__position-description {
-  max-width: 296px;
+  max-width: clamp(16.8125rem, 7.2204rem + 21.3158vw, 21.875rem);
   grid-area: description;
   font-size: var(--support-text-size);
   font-weight: var(--regular-text);
@@ -32,7 +32,8 @@
 }
 
 .menu__position-header,
-.menu__position-price {
+.menu__position-price,
+.menu__position-filling-list {
   white-space: nowrap;
 }
 
@@ -53,11 +54,10 @@
   list-style: "—  ";
   display: flex;
   flex-direction: column;
-  text-transform: capitalize;
+  text-transform: lowercase;
   font-size: var(--support-text-size);
   font-weight: var(--regular-text);
   color: var(--service-color);
-  white-space: nowrap;
 }
 
 .menu__position-filling-list li {
